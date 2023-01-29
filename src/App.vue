@@ -11,7 +11,6 @@
       ></v-select>
     </v-col>
   </v-row>
-      {{availableVariations}}
     </v-content>
   </v-app>
 </template>
@@ -41,18 +40,14 @@ export default {
       })
     },
     filterData(data) {
-      let species = [];
-      for (let i = 0; i < data.species.length; i++) {
-        species.push(data.species[i]);
-      }
       let availableVariations = [];
-      for (let specie of species) {
-        if (specie.groups.includes('variation')) {
-          availableVariations.push(specie);
+      for (let i = 0; i < data.species.length; i++) {
+        if(data.species[i].groups.includes('variation')) {
+          availableVariations.push(data.species[i]);
         }
       }
       this.availableVariations = availableVariations.map(value => {
-        return value.display_name
+        return [value.display_name, value.name]
       });
     }
 
