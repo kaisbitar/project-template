@@ -15,59 +15,6 @@
           </v-list-item-content>
         </v-list-item>
 
-        <!-- <h3>البحث على مستوى:</h3> -->
-
-        <v-list-item>
-          <v-list-item-action>
-            <v-icon>mdi-book-open-outline</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>
-              <router-link :to="'/about'">
-                <h3>About</h3>
-              </router-link>
-            </v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item>
-          <v-list-item-action>
-            <v-icon>mdi-book-open-outline</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>
-              <router-link :to="'/contact'">
-                <h3>Contact</h3>
-              </router-link>
-            </v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        
-        <v-list-item>
-          <v-list-item-action>
-            <v-icon>mdi-book-open-outline</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>
-              <router-link :to="'/search'">
-                <h3>Search</h3>
-              </router-link>
-            </v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item>
-          <v-list-item-action>
-            <v-icon>mdi-book-open-outline</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>
-              <router-link :to="'/more'">
-                <h3>More..</h3>
-              </router-link>
-            </v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
       </v-list>     
       
     </v-navigation-drawer>
