@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    
     <siteMenu/>
     <v-content>
       <v-row align="center">
@@ -52,7 +51,9 @@ export default {
           availableVariations.push(specie);
         }
       }
-      this.availableVariations = availableVariations;
+      this.availableVariations = availableVariations.map(value => {
+        return value.display_name
+      });
     }
 
   },
