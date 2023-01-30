@@ -1,5 +1,6 @@
 <template>
   <div>
+  <h4>{{ title }}</h4>
     <v-data-table
     :headers="headers"
     :items="items"
@@ -15,7 +16,7 @@ export default {
   name: "appTable",
 
   components: {},
-  props: ["items", "headers", "loading"],
+  props: ["items", "headers", "title", "loading"],
 
   data: () => ({}),
   methods: {
