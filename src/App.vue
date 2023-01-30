@@ -59,15 +59,11 @@ export default {
         });
     },
     filterData(data) {
-      let availableVariations = [];
       for (let i = 0; i < data.species.length; i++) {
         if (data.species[i].groups.includes("variation")) {
-          availableVariations.push(data.species[i]);
+          this.availableVariations.push(data.species[i].name);
         }
       }
-      this.availableVariations = availableVariations.map((value) => {
-        return value.name;
-      });
     },
     async getVariationInfo(selectedVariation) {
       this.loading = true;
